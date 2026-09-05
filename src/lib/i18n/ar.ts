@@ -17,8 +17,8 @@ export const ar: Dictionary = {
   languageSwitcher: {
     label: "اللغة",
     ar: "العربية",
-    fr: "Français",
-    en: "English",
+    fr: "FR",
+    en: "EN",
   },
 
   header: {
@@ -122,7 +122,7 @@ export const ar: Dictionary = {
     title: "عشرة محاور",
     description:
       "عشرة محاور استراتيجية متكاملة تترجم الالتزامات الكبرى للاتحاد الدستوري إلى سياسات وإجراءات عملية ملموسة.",
-    discoverMore: "اكتشف المزيد",
+    discoverMore: "المزيد من التفاصيل",
     items: {
       economie: {
         title: "الاقتصاد الوطني، الإنتاج والاستثمار",
@@ -272,6 +272,19 @@ export const ar: Dictionary = {
     eyebrow: "البرنامج المفصل",
     title: "تفاصيل المحاور العشرة",
     description: "اضغط على أي محور للاطلاع على الالتزامات الكاملة المرتبطة به.",
+  },
+
+  detailPage: {
+    sourceLanguageNotice: "",
+    axisEyebrow: "محور البرنامج",
+    commitmentEyebrow: "التزام وطني",
+    overview: "نظرة عامة",
+    measures: "التدابير والمقترحات",
+    relatedPriorities: "الأولويات المرتبطة بهذا الالتزام",
+    backToAxes: "العودة إلى المحاور",
+    backToCommitments: "العودة إلى الالتزامات",
+    previous: "السابق",
+    next: "التالي",
   },
 
   download: {

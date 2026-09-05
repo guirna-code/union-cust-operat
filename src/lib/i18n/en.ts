@@ -17,8 +17,8 @@ export const en: Dictionary = {
   languageSwitcher: {
     label: "Language",
     ar: "العربية",
-    fr: "Français",
-    en: "English",
+    fr: "FR",
+    en: "EN",
   },
 
   header: {
@@ -122,7 +122,7 @@ export const en: Dictionary = {
     title: "Ten Axes",
     description:
       "Ten strategic and integrated axes translating the core commitments of Union Constitutionnelle into tangible public policies and concrete measures.",
-    discoverMore: "Learn more",
+    discoverMore: "More details",
     items: {
       economie: {
         title: "National Economy, Production & Investment",
@@ -273,6 +273,19 @@ export const en: Dictionary = {
     title: "Details of the Ten Axes",
     description:
       "Click on any axis to discover the full concrete measures and detailed policy commitments formulated for the nation and citizens.",
+  },
+
+  detailPage: {
+    sourceLanguageNotice: "The full programme text is available only in Arabic. The original version is displayed below.",
+    axisEyebrow: "Program axis",
+    commitmentEyebrow: "National commitment",
+    overview: "Overview",
+    measures: "Measures and proposals",
+    relatedPriorities: "Priorities linked to this commitment",
+    backToAxes: "Back to the axes",
+    backToCommitments: "Back to the commitments",
+    previous: "Previous",
+    next: "Next",
   },
 
   download: {

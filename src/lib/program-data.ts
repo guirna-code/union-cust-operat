@@ -11,7 +11,7 @@ import {
   TrendingUp,
   type LucideIcon,
 } from "lucide-react";
-import type { CategorySlug } from "@/lib/i18n/types";
+import type { CategorySlug, CommitmentSlug } from "@/lib/i18n/types";
 
 export type CategoryMeta = {
   slug: CategorySlug;
@@ -29,6 +29,18 @@ export const categoriesMeta: CategoryMeta[] = [
   { slug: "bia-tanmia-moustadama", icon: Leaf },
   { slug: "hakama-idara", icon: Landmark },
   { slug: "thaqafa-riyada", icon: Palette },
+];
+
+export type CommitmentMeta = {
+  slug: CommitmentSlug;
+  relatedAxes: CategorySlug[];
+};
+
+export const commitmentsMeta: CommitmentMeta[] = [
+  { slug: "productive-economy", relatedAxes: ["economie", "tashghil-chabab"] },
+  { slug: "social-equity", relatedAxes: ["taalim-takwin", "sante", "adala-ijtimaiya"] },
+  { slug: "regional-justice", relatedAxes: ["tanmia-majaliya", "bia-tanmia-moustadama"] },
+  { slug: "trust-and-influence", relatedAxes: ["raqmana-ibtikar", "hakama-idara", "thaqafa-riyada"] },
 ];
 
 export const programPdfPath = "/documents/programme-electoral-uc.pdf";

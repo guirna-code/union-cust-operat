@@ -17,8 +17,8 @@ export const fr: Dictionary = {
   languageSwitcher: {
     label: "Langue",
     ar: "العربية",
-    fr: "Français",
-    en: "English",
+    fr: "FR",
+    en: "EN",
   },
 
   header: {
@@ -122,7 +122,7 @@ export const fr: Dictionary = {
     title: "Dix axes",
     description:
       "Dix axes stratégiques intégrés traduisant les grands engagements de l'Union Constitutionnelle en politiques et mesures concrètes.",
-    discoverMore: "En savoir plus",
+    discoverMore: "Plus de détails",
     items: {
       economie: {
         title: "Économie nationale, production et investissement",
@@ -273,6 +273,19 @@ export const fr: Dictionary = {
     title: "Détail des dix axes",
     description:
       "Cliquez sur un axe pour découvrir l'ensemble des mesures concrètes et des engagements détaillés au service de la nation et des citoyens.",
+  },
+
+  detailPage: {
+    sourceLanguageNotice: "Le texte intégral du programme est disponible uniquement en arabe. La version originale est affichée ci-dessous.",
+    axisEyebrow: "Axe du programme",
+    commitmentEyebrow: "Engagement national",
+    overview: "Vue d’ensemble",
+    measures: "Mesures et propositions",
+    relatedPriorities: "Priorités liées à cet engagement",
+    backToAxes: "Retour aux axes",
+    backToCommitments: "Retour aux engagements",
+    previous: "Précédent",
+    next: "Suivant",
   },
 
   download: {

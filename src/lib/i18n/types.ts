@@ -12,6 +12,12 @@ export type CategorySlug =
   | "hakama-idara"
   | "thaqafa-riyada";
 
+export type CommitmentSlug =
+  | "productive-economy"
+  | "social-equity"
+  | "regional-justice"
+  | "trust-and-influence";
+
 export type CategoryContent = {
   title: string;
   description: string;
@@ -102,6 +108,19 @@ export type Dictionary = {
     eyebrow: string;
     title: string;
     description: string;
+  };
+
+  detailPage: {
+    sourceLanguageNotice: string;
+    axisEyebrow: string;
+    commitmentEyebrow: string;
+    overview: string;
+    measures: string;
+    relatedPriorities: string;
+    backToAxes: string;
+    backToCommitments: string;
+    previous: string;
+    next: string;
   };
 
   download: {

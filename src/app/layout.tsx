@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { IBM_Plex_Sans_Arabic, Inter } from "next/font/google";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -17,12 +16,6 @@ const latinFont = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
-
-export const metadata: Metadata = {
-  title: "الاتحاد الدستوري | البرنامج الانتخابي",
-  description:
-    "الموقع الرسمي لحزب الاتحاد الدستوري: البرنامج الانتخابي، الرؤية السياسية، والالتزامات الوطنية الكبرى.",
-};
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
