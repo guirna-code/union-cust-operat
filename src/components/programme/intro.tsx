@@ -8,7 +8,7 @@ export function ProgrammeIntro() {
   const { t } = useLocale();
 
   return (
-    <section className="bg-surface py-20 sm:py-28">
+    <section id="intro" className="scroll-mt-20 bg-surface py-20 sm:py-28">
       <Container>
         <SectionHeading eyebrow={t.intro.eyebrow} title={t.intro.title} />
 

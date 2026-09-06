@@ -6,6 +6,12 @@ import { cn } from "@/lib/utils";
 
 export function LanguageSwitcher({ className }: { className?: string }) {
   const { locale, setLocale, t } = useLocale();
+  const locales = ["ar", "fr", "en"] as const;
+
+  function cycleLocale() {
+    const currentIndex = locales.indexOf(locale);
+    setLocale(locales[(currentIndex + 1) % locales.length]);
+  }
 
   return (
     <div
@@ -18,6 +24,14 @@ export function LanguageSwitcher({ className }: { className?: string }) {
       aria-label={t.languageSwitcher.label}
     >
       <Languages className="ms-1.5 h-4 w-4 text-ink-soft" aria-hidden />
+      <button
+        type="button"
+        onClick={cycleLocale}
+        className="rounded-full px-1 text-ink-soft transition-colors hover:text-ink"
+        aria-label={t.languageSwitcher.label}
+      >
+        {t.languageSwitcher.label}
+      </button>
       <button
         lang="ar"
         dir="rtl"

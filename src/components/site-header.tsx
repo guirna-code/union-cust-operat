@@ -37,7 +37,7 @@ export function SiteHeader() {
 
         <div className="hidden shrink-0 items-center gap-3 lg:flex">
           <LanguageSwitcher />
-          <Button href="/programme-electoral" size="sm" className="hidden 2xl:inline-flex">
+          <Button href="/programme-electoral" size="sm">
             {t.header.ctaDiscover}
           </Button>
         </div>
@@ -65,7 +65,6 @@ export function SiteHeader() {
               <Link
                 key={item.href}
                 href={item.href}
-                onClick={() => setOpen(false)}
                 className="rounded-lg px-3 py-2.5 text-sm font-medium text-ink-soft hover:bg-red/5 hover:text-red"
               >
                 {item.label}
@@ -73,7 +72,7 @@ export function SiteHeader() {
             ))}
             <div className="mt-2 flex items-center justify-between gap-3">
               <LanguageSwitcher />
-              <Button href="/programme-electoral" size="sm" className="flex-1">
+              <Button href="/programme-electoral" size="sm" className="flex-1" onClick={() => setOpen(false)}>
                 {t.header.ctaDiscover}
               </Button>
             </div>
